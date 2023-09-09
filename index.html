@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>bulls & cows</title>
+	<head>
+		<meta charset="utf-8">
+		<script src="eel.js"></script>
+		<script src = "script.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel = "icon" type = "image/png" href = "icon.png">
+	</head>
+<body>
+<div class = "wrapper">
+
+	<div class = "col" id = "first_column">
+		<header>your field</header>
+		<p id = "secret">secret</p>
+		<p id = "your_att">0</p>
+		<input type = "text" id = "your_guess" placeholder="write your guess" maxlength="4">
+
+		<p id = "your_res">0 bulls 0 cows</p>
+	</div>
+	<div class = "col" id = "second_column">
+		<header>opponent's field</header>
+		<input type = "text" id = "your_number" placeholder="write your number" maxlength="4">
+		<p id = "opp_att">0</p>
+		<p id = "opponent_guess">0000</p>
+		<p id = "opp_res">0 bulls 0 cows</p>
+	</div>
+
+</div>
+
+
+<div id ="digits_msg" class = "popup">
+	<div class = "popup_body">
+		<div class = "popup_content">
+			<a href = "" class = "popup_close">X</a>
+			<div class="popup_title">Erorr...</div>
+				<div class = "popup_text">
+					Digits must not be repeated!
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id ="con_msg" class = "popup">
+	<div class = "popup_body">
+		<div class = "popup_content">
+			<a href = "" class = "popup_close">X</a>
+			<div class="popup_title">Error...</div>
+				<div class = "popup_text">
+					Невозможно отправить :(
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id ="reg_msg" class = "popup">
+	<div class = "popup_body">
+		<div class = "popup_content">
+			<div class="popup_title">Hi! What's yor name?</div>
+				<div class = "popup_text">
+					Introduce yourself and press Enter
+					<input type = "text" id = "name" placeholder="my name is...">
+				</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
